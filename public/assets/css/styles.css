@@ -1,0 +1,104 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+:root {
+    /*Colores Hex*/
+    --color_light_1:#9DCAEF;
+    --color_light_2:#6DACE1;
+    --color_primario: #4994D2;
+    --color_dark_1:#297DC2;
+    --color_dark_2:#0A65B0;
+    /*Colores RGBa*/
+    --color_light_1_rgba: rgba(157, 202, 239, 1);
+    --color_light_2_rgba: rgba(109, 172, 225, 1);
+    --color_primario_rgba: rgba(73, 148, 210, 1);
+    --color_dark_1_rgba: rgba(41, 125, 194, 1);
+    --color_dark2_rgba: rgba( 10,101,176,1);
+    /*Otros colores*/
+    --color_secundario: #252525;
+    --color_negro: #000;
+    --color_blanco: #fff;
+    /*Tamaños*/
+    --ancho_maximo: 1100px;
+    --padding_izquierda_derecha: 20px;
+    --padding_arriba_abajo: 100px;
+    --altura_header: 60px;
+    /* Tamaños de fuentes */
+    --titulo_h1: clamp(1rem, 7vw, 2.6rem);
+    --titulos_h2: clamp(1.2rem, 5.6vw, 2rem);
+    --subtitulo_seccion_principal: clamp(1.1rem, 4vw, 2rem);
+    --parrafo_seccion_principal: clamp(0.6rem, 2.3vw, 1.1rem);
+    --parrafo_secciones: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background-color: red;
+}
+
+#cuerpo-uno {
+    background-color: var(--color_blanco);
+}
+
+#cuerpo-dos {
+    background-color: var(--color_dark_2);
+}
+#cuerpo-tres {
+    background-color: var(--color_blanco);
+}
+
+#cuerpo-cuatro {
+    background-color: var(--color_dark_2);
+}
+
+#cuerpo-cinco {
+    background-color: var(--color_blanco);
+}
+
+#cuerpo-seis {
+    background-color: var(--color_dark_2);
+}
+
+#cuerpo-siete {
+    background-color: var(--color_blanco);
+}
+
+
+
+h1 {
+    font-size: 2.5em; /* El tamaño es 2 veces el tamaño del texto normal del documento */
+    border: 1px solid #000; /* Un borde sólido de 1 píxel de color negro */
+    padding: 10px; /* Añade espacio interno para separar el contenido del borde */
+    margin: 5px;
+}
+
+h2 {
+    font-size: 1.5em; /* El tamaño es 1.5 veces el tamaño del texto normal del documento */
+    border: 1px solid #000; /* Un borde sólido de 1 píxel de color negro */
+    padding: 10px; /* Añade espacio interno para separar el contenido del borde */
+    margin: 5px;
+    
+}
+
+h3 {
+    font-size: 1em; /* El tamaño es 1.2 veces el tamaño del texto normal del documento */
+    border: 1px solid #000; /* Un borde sólido de 1 píxel de color negro */
+    padding: 10px; /* Añade espacio interno para separar el contenido del borde */
+    margin: 5px;
+}
+p {
+    font-size: 1.0em; /* El tamaño es 1.2 veces el tamaño del texto normal del documento */
+    border: 1px solid #000; /* Un borde sólido de 1 píxel de color negro */
+    padding: 10px; /* Añade espacio interno para separar el contenido del borde */
+    margin: 5px;
+}
+article {
+    background: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
