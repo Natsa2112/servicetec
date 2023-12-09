@@ -33,127 +33,386 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: auto; /* Fallback para navegadores que no admiten scroll-behavior */
+    }
+
 body{
-    margin: 0;
-    background-color: red;
+    
+    font-family: raleway, sans-serif;
+    
+    display: grid;
+    grid-template-rows: auto; /* Definir filas para header, main y footer */
+    min-height: auto  /*Asegurar que el body ocupe al menos la altura de la ventana */
 }
 
-/*carrusel*/
-.seccion-uno{
-    display: flex;
-    flex-direction: column;
+
+
+
+/**header seccion**/
+header{
+    text-align: center;
+    background-color: orange;
+    min-height: 30px;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: fixed;
+    top: 7px;
     width: 100%;
-    height: 610px;
-    background-image: url(../img/1e-cocina001.jpg);
-    /* background-color: rgba(0, 0, 0, 1); */
-    background-size: cover;
-    animation: animate 10s infinite;
+    z-index: 1000
+}
+#logo {
+    text-align: left;
+    background-color: red;
+    padding-left: 4%;
 
 }
-.seccion-uno::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-#bienvenida {
-    position: relative;
-    color: var(--color_blanco);
-    font-size: 4rem;
-    /*border: 2px solid #000;*/
-    margin-top: 15%;
-    margin-left: 5%;
+#navbar{
+    background-color: #0A65B0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
     
 }
-#slogan{
-    position: relative;
-    color: var(--color_blanco);
-    font-size: 2rem;
-    /*border: 2px solid #000;*/
-    margin-top: 5%;
-    margin-left: 10%;
-}
-#parrafo-bienvenida{
-    position: relative;
-    color: var(--color_blanco);
-    font-size: 1.5rem;
-    /*border: 2px solid #000;*/
-    margin-top: 8%;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
-    justify-content: center;
-}
 
-@keyframes animate {
-    20%{
-        background-image: url(../img/1e-cocina002.jpg);
-        background-size: cover;
-    }
-    40%{
-        background-image: url(../img/1e-dormitorio004.jpg);
-        background-size: cover;
-    }
-    60%{
-        background-image: url(../img/1e-sala001.jpg);
-        background-size: cover;
-    }
-    80%{
-        background-image: url(../img/1e-living001.jpg);
-        background-size: cover;
-    }
-    100%{
-        background-image: url(../img/1e-cocina001.jpg);
-        background-size: cover;
-    }
-}
 
-/*.seccion-dos{
-    position: relative;
-}
-.seccion-tres{
-    position: relative;
-}
-.seccion-cuatro{
-    position: relative;
-}
-.seccion-cinco{
-    position: relative;
-}
-.seccion-seis{
-    position: relative;
-}
-.seccion-siete{
-    position: relative;
-}
-*/
 
+/**primer seccion**/
+main{
+    background-color: lightcoral;
+    min-height: 800px;
+    grid-row: 2;
+}
 #cuerpo-uno {
-    /*background-color: var(--color_blanco);*/
+    position: relative;
+    background-color: var(--color_blanco);
+    min-height: 615px;
+    
+}
+#cuerpo-uno{
+    justify-content: center;
+    align-items: center;
+}
+#empresa {
+    background-color: darkgreen;
+    padding-top: 40px;
+    font-size: 5rem;
+    padding-top: 15%;
+    margin-left: 4%;
+    animation: animacionEmpresa 1s ease-out;
+}
+@keyframes animacionEmpresa {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#eslogan {
+    background-color: darksalmon;
+    padding-top: 4%;
+    margin-left: 8%;
+    animation: animacionEslogan 2s ease-out;
+}
+@keyframes animacionEslogan {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#parrafo-bienvenida {
+    font-size: 1rem;
+    padding-top: 10%;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    animation: aparecerDesdeAbajo 4s ease-out;
+}
+@keyframes aparecerDesdeAbajo {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.card-s{
+    margin-bottom: 4%;
+}
+.card-s p {
+    text-align: justify;
+    
 }
 
+
+
+
+
+/**segunda seccion**/
 #cuerpo-dos {
     background-color: var(--color_dark_2);
+    min-height: 615px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
 }
+#card-service{
+    height: 450px;
+    background-color: darkcyan;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#titulo-sevicios{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10%;
+}
+#foto-servicios{
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 10%;
+    
+}
+#img-cocinab{
+    width: 100%;border-radius: 10%;
+}
+
+
+
+
+
+/**tercera seccion**/
 #cuerpo-tres {
     background-color: var(--color_blanco);
+    min-height: 615px;
+    display: grid;
+    grid-template-rows: 25% 1fr;
+}
+#productos-titulo{
+    background-color: darkgoldenrod;
+}
+#productos-titulo h2{
+    background-color: darkkhaki;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#productos-titulo p{
+    background-color: darkcyan;
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+#productos-cards{
+    background-color: darkolivegreen;
+    padding: 2% 4% 2% 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.producto-card{
+    text-align: center;
+    background-color: darkslategray;
+    margin: 4%;
+    border-radius: 15%;
+    display: grid;
+    grid-template-rows: 44% 15% 40%;
+}
+#productos-cards picture {
+    background-color: aqua;
+}
+.producto-card h3{
+    background-color: blanchedalmond;
+    margin-top: 5%;
+}
+.producto-card p{
+    background-color: lightpink;
+    margin-top: 2%;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
+
+
+
+/**cuarta seccion**/
 #cuerpo-cuatro {
     background-color: var(--color_dark_2);
+    min-height: 615px;
+    display: grid;
+    grid-template-rows: 25% 1fr;
+}
+#cuerpo-cuatro h2{
+    background-color: lightgrey;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 4%;
+}
+#testimonios-parrafos{
+    background-color: #9DCAEF;
+    margin: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+#testimonios-parrafos div{
+    background-color: chocolate;
+    margin: 3%;
+    display: grid;
+    grid-template-rows: 50% 1fr;
+}
+.testimonios picture{
+    background-color: lightslategray;
+    align-self: center;
+    justify-self: center;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+#testimonios-parrafos p{
+    background-color: darkolivegreen;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+}
+
+
+
+/**quinta seccion**/
 #cuerpo-cinco {
     background-color: var(--color_blanco);
+    min-height: 615px;
+    display: grid;
+    grid-template-rows: 25% 1fr;
+}
+#cuerpo-cinco h2{
+    font-size: 3rem;
+    background-color: lightpink;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    padding-top: 4%;
+}
+#consejos-grupo{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4%;
+}
+.consejo{
+    background-color: darkgoldenrod;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: grid;
+    grid-template-rows: 35% 10% 1fr;
 }
 
+.consejo picture{
+    background-color: lightblue;
+    align-self: center;
+    justify-self: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.consejo h3{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.consejo p{
+    text-align: justify;
+    padding: 6%;
+}
+
+
+
+/**sexta seccion**/
 #cuerpo-seis {
     background-color: var(--color_dark_2);
+    min-height: 615px;
+    display: grid;
+    grid-template-rows: 25% 1fr;
+}
+#cuerpo-seis h2{
+    background-color: beige;
+    margin: 4%;
+    padding: 4%;
+    text-align: center;
+    font-size: 2.5rem;
+    place-items: center;
+}
+#cuerpo-seis p{
+    background-color: pink;
+    margin: 4%;
+    padding: 2%;
+    text-align: center;
+    font-size: 2rem;
+    
 }
 
+
+
+/**septima seccion**/
 #cuerpo-siete {
     background-color: var(--color_blanco);
+    min-height: 615px;
+    display: grid;
+} 
+#cuerpo-siete h2 {
+    background-color: lightgreen;
+    margin: 4%;
+    padding: 4%;
+    text-align: center;
+    font-size: 2.5rem;
+    place-items: center;
+
 }
+#call{
+    background-color: cadetblue;
+    margin: 1% 4% 4% 4%;
+    padding: 1%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+/**footer seccion**/
+footer{
+    background-color: lightpink;
+    min-height: 100px;
+    grid-row: 3;
+    place-items: center;
+}
+
