@@ -184,7 +184,7 @@ main {
 	/*display: none;  ocultar el cuerpo-uno */
   position: relative;
   min-height: 615px;
-	background-image: url(../img/2-pc-1024/dormitorio-001.png);
+	background-image: url(../img/2-pc-1024/dormitorio-001.webp);
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -343,19 +343,19 @@ main {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 #productoA {
-	background-image: url(../img/2-pc-1024/dormitorio-002.png);
+	background-image: url(../img/2-pc-1024/dormitorio-002.webp);
 	background-size: cover;
 	background-position: top;
 	border-radius: 2rem 2rem 0 0;
 }
 #productoB {
-	background-image: url(../img/2-pc-1024/sala-001.png);
+	background-image: url(../img/2-pc-1024/sala-001.webp);
 	background-size: cover;
 	background-position: top;
 	border-radius: 2rem 2rem 0 0;
 }
 #productoC {
-	background-image: url(../img/2-pc-1024/mujer.png);
+	background-image: url(../img/2-pc-1024/mujer.webp);
 	background-size: cover;
 	background-position: center;
 	border-radius: 2rem 2rem 0 0;
