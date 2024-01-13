@@ -1,166 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="js/script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Servitec</title>
-</head>
-<body id="cuerpo-general">
+  </head>
 
-<header>
-    
-        <a href="#" id="logo">Servitec</a>
+  <body id="cuerpo-general">
+    <header class="header">
+      <a href="#inicio" class="logo">Servitec</a>
 
-        <nav id="navbar">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#productos">Productos</a>
-        <a href="#consejos">Consejos</a>
-        <a href="#promociones">Promociones</a>
-        <a href="#contacto">Contacto</a>
-        </nav>
-    
-</header>
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu bx-tada' id="menu-icon"></i>
+        <i class='bx bx-x bx-tada' id="close-icon"></i>
+      </label>
 
-<main id="main">
-    <section id="inicio">
+      <nav class="navbar">
+        <a href="#inicio" style="--i:0">Inicio</a>
+        <a href="#servicios" style="--i:1">Servicios</a>
+        <a href="#productos" style="--i:2">Productos</a>
+        <a href="#consejos" style="--i:3">Consejos</a>
+        <a href="#promociones" style="--i:4">Promociones</a>
+        <a href="#contacto" style="--i:5">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="inicio">
         <article class="cuerpos" id="cuerpo-uno">
-            <h1 id="empresa">Servitec (1)</h1>
-        
-            <h2 id="eslogan">Creando Ambientes Perfectos.</h2>
-    
-        
-            <p id="parrafo-bienvenida">En <strong>Servitec</strong>, nos dedicamos a brindarte soluciones de climatización excepcionales para que disfrutes de ambientes perfectos en tu hogar o negocio. <span hidden>Nos enorgullece ofrecer productos y servicios de alta calidad respaldados por la última tecnología en sistemas de aire acondicionado.</span> Nuestro compromiso es crear espacios donde la comodidad y la eficiencia se encuentren.</p>
+          <h1 id="empresa">Servitec (1)</h1>
+
+          <h2 id="eslogan">Creando Ambientes Perfectos.</h2>
+
+          <p id="parrafo-bienvenida">
+            En <strong>Servitec</strong>, nos dedicamos a brindarte soluciones
+            de climatización excepcionales para que disfrutes de ambientes
+            perfectos en tu hogar o negocio.
+            <span hidden
+              >Nos enorgullece ofrecer productos y servicios de alta calidad
+              respaldados por la última tecnología en sistemas de aire
+              acondicionado.</span
+            >
+            Nuestro compromiso es crear espacios donde la comodidad y la
+            eficiencia se encuentren.
+          </p>
         </article>
-    </section>
-    
-    <section id="servicios">
+      </section>
+
+      <section id="servicios">
         <article class="cuerpos" id="cuerpo-dos">
-            <div id="card-service">
-                <h2 id="titulo-sevicios">Nuestros Servicios: (2)</h2>
-                <div class="card-s">
-                    <h3>Instalación Profesional:</h3>
-                    <p>Nuestro equipo altamente capacitado se encarga de la instalación experta de tu sistema de aire acondicionado, garantizando un rendimiento óptimo y una larga vida útil.</p>
-                </div>            
-
-                <div class="card-s">
-                    <h3>Mantenimiento Programado:</h3>
-                    <p>Ofrecemos programas de mantenimiento regulares para asegurar que tu sistema funcione de manera eficiente y sin problemas durante todo el año.</p>
-                </div>
-
-                <div class="card-s">
-                    <h3>Reparación y Actualización:</h3>
-                    <p>Si experimentas problemas con tu sistema actual, nuestro equipo de técnicos cualificados está listo para brindar servicios de reparación rápidos y eficientes. Además, te asesoramos sobre las opciones de actualización disponibles para optimizar la eficiencia energética.</p>
-                </div>
+          <div id="card-service">
+            <h2 id="titulo-sevicios">Nuestros Servicios: (2)</h2>
+            <div class="card-s">
+              <h3>Instalación Profesional:</h3>
+              <p>
+                Nuestro equipo altamente capacitado se encarga de la instalación
+                experta de tu sistema de aire acondicionado, garantizando un
+                rendimiento óptimo y una larga vida útil.
+              </p>
             </div>
 
-            <picture id="foto-servicios">
-                <img id="img-cocinab" src="assets/img/1e-cocina002.jpg" alt="Cocina en todos blancos y con aire acondicionado en tono.">
-            </picture>
-            
-        </article>
-    </section>
+            <div class="card-s">
+              <h3>Mantenimiento Programado:</h3>
+              <p>
+                Ofrecemos programas de mantenimiento regulares para asegurar que
+                tu sistema funcione de manera eficiente y sin problemas durante
+                todo el año.
+              </p>
+            </div>
 
-    <section id="productos">
+            <div class="card-s">
+              <h3>Reparación y Actualización:</h3>
+              <p>
+                Si experimentas problemas con tu sistema actual, nuestro equipo
+                de técnicos cualificados está listo para brindar servicios de
+                reparación rápidos y eficientes. Además, te asesoramos sobre las
+                opciones de actualización disponibles para optimizar la
+                eficiencia energética.
+              </p>
+            </div>
+          </div>
+
+          <picture id="foto-servicios">
+            <img
+              id="img-cocinab"
+              src="assets/img/2-pc-1024/cocina-002.png"
+              alt="Cocina en todos blancos y con aire acondicionado en tono."
+            />
+          </picture>
+        </article>
+      </section>
+
+      <section id="productos">
         <article class="cuerpos" id="cuerpo-tres">
-            <div id="productos-titulo">
-                <h2>Productos Destacados: (3)</h2>
-                <p>Descubre nuestra gama de productos de vanguardia que se adaptan a las necesidades específicas de tu espacio:</p>
+          <div id="productos-titulo">
+            <h2>Productos Destacados: (3)</h2>
+            <p>
+              Descubre nuestra gama de productos de vanguardia que se adaptan a
+              las necesidades específicas de tu espacio:
+            </p>
+          </div>
+
+          <div id="productos-cards">
+            <div class="producto-card">
+              <picture id="productoA"><img src="#" alt="" /></picture>
+              <h3>Aires Acondicionados Residenciales:</h3>
+              <p>
+                Desde unidades de ventana hasta sistemas de climatización
+                inteligente, ofrecemos soluciones que se integran perfectamente
+                en tu hogar, brindando comodidad personalizada.
+              </p>
             </div>
 
-            <div id="productos-cards">
-                <div class="producto-card">
-                    <picture id="productoA"><img src="#" alt=""></picture>
-                    <h3>Aires Acondicionados Residenciales:</h3>
-                    <p>Desde unidades de ventana hasta sistemas de climatización inteligente, ofrecemos soluciones que se integran perfectamente en tu hogar, brindando comodidad personalizada.</p>
-                </div>
-
-                <div class="producto-card">
-                    <picture id="productoB"><img src="#" alt=""></picture>
-                    <h3>Climatización Comercial:</h3>
-                    <p>Para empresas y espacios comerciales, contamos con sistemas de aire acondicionado centralizados y soluciones personalizadas para mantener ambientes ideales.</p>
-                </div>
-
-                <div class="producto-card">
-                    <picture id="productoC"><img src="#" alt=""></picture>
-                    <h3>Tecnología de Punta:</h3>
-                    <p>Explora nuestras opciones de última generación, como sistemas con control remoto, termostatos inteligentes y tecnologías de purificación de aire para una experiencia completa.</p>
-                </div>
-                
-
+            <div class="producto-card">
+              <picture id="productoB"><img src="#" alt="" /></picture>
+              <h3>Climatización Comercial:</h3>
+              <p>
+                Para empresas y espacios comerciales, contamos con sistemas de
+                aire acondicionado centralizados y soluciones personalizadas
+                para mantener ambientes ideales.
+              </p>
             </div>
 
-            </article>
-    </section>
-    
-    <section id="testimonios">
+            <div class="producto-card">
+              <picture id="productoC"><img src="#" alt="" /></picture>
+              <h3>Tecnología de Punta:</h3>
+              <p>
+                Explora nuestras opciones de última generación, como sistemas
+                con control remoto, termostatos inteligentes y tecnologías de
+                purificación de aire para una experiencia completa.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="testimonios">
         <article class="cuerpos" id="cuerpo-cuatro">
-            <h2>Testimonios: (4)</h2>
-            <div id="testimonios-parrafos">
-                <div class="testimonios" id="testimonio-uno">
-                    <picture><img src="#" alt=""></picture>
-                    <p>"No solo nos proporcionaron un excelente sistema de aire acondicionado, sino que también el servicio al cliente fue excepcional. Recomiendo encarecidamente a Servitec." - Cliente Satisfecho.</p>
-                </div>
-                <div class="testimonios" id="testimonio-dos">
-                    <picture><img src="#" alt=""></picture>
-                    <p>"Servicetec no solo cumplió con nuestras expectativas, sino que las superó. Su equipo técnico fue puntual, profesional y amigable. Estamos disfrutando de un ambiente mucho más cómodo gracias a su experiencia en instalación de aires acondicionados. ¡Altamente recomendados!"</p>
-                </div>
-                <div class="testimonios" id="testimonio-tres">
-                    <picture><img src="#" alt=""></picture>
-                    <p>"Después de la instalación, notamos una diferencia inmediata en la calidad del aire en nuestra oficina. ¡Gracias por hacer nuestro espacio de trabajo más cómodo!" - Empresa Cliente.</p>
-                </div>
+          <h2>Testimonios: (4)</h2>
+          <div id="testimonios-parrafos">
+            <div class="testimonios" id="testimonio-uno">
+              <picture><img src="#" alt="" /></picture>
+              <p>
+                "No solo nos proporcionaron un excelente sistema de aire
+                acondicionado, sino que también el servicio al cliente fue
+                excepcional. Recomiendo encarecidamente a Servitec." - Cliente
+                Satisfecho.
+              </p>
             </div>
+            <div class="testimonios" id="testimonio-dos">
+              <picture><img src="#" alt="" /></picture>
+              <p>
+                "Servicetec no solo cumplió con nuestras expectativas, sino que
+                las superó. Su equipo técnico fue puntual, profesional y
+                amigable. Estamos disfrutando de un ambiente mucho más cómodo
+                gracias a su experiencia en instalación de aires acondicionados.
+                ¡Altamente recomendados!"
+              </p>
+            </div>
+            <div class="testimonios" id="testimonio-tres">
+              <picture><img src="#" alt="" /></picture>
+              <p>
+                "Después de la instalación, notamos una diferencia inmediata en
+                la calidad del aire en nuestra oficina. ¡Gracias por hacer
+                nuestro espacio de trabajo más cómodo!" - Empresa Cliente.
+              </p>
+            </div>
+          </div>
         </article>
-    </section>
+      </section>
 
-    <section id="consejos">
+      <section id="consejos">
         <article class="cuerpos" id="cuerpo-cinco">
-            <h2>Consejos útiles: (5)</h2>
-            <div id="consejos-grupo">
-                <div class="consejo">
-                    <picture><img src="#" alt="">Icono</picture>
-                    <h3>Limpieza regular de los filtros:</h3>
-                    <p>Los filtros de aire sucios pueden reducir la eficiencia del aire acondicionado. Limpia o reemplaza los filtros según las recomendaciones del fabricante, generalmente cada 1-3 meses.</p>
-                </div>
-
-                <div class="consejo">
-                    <picture><img src="#" alt="">Icono</picture>
-                    <h3>Aislar espacios:</h3>
-                    <p>Aislar espacios: Asegúrate de que las puertas y ventanas estén cerradas cuando el aire acondicionado esté encendido para evitar la pérdida de aire fresco.</p>
-                </div>
-
-                <div class="consejo">
-                    <picture><img src="#" alt="">Icono</picture>
-                    <h3>Mantenimiento profesional:</h3>
-                    <p>Programa revisiones y mantenimientos regulares con un técnico especializado. Esto puede ayudar a identificar y resolver problemas antes de que se conviertan en fallas mayores.</p>
-                </div>
+          <h2>Consejos útiles: (5)</h2>
+          <div id="consejos-grupo">
+            <div class="consejo">
+              <picture><img src="#" alt="" />Icono</picture>
+              <h3>Limpieza regular de los filtros:</h3>
+              <p>
+                Los filtros de aire sucios pueden reducir la eficiencia del aire
+                acondicionado. Limpia o reemplaza los filtros según las
+                recomendaciones del fabricante, generalmente cada 1-3 meses.
+              </p>
             </div>
-        </article>
-    </section>
 
-    <section id="promociones">
+            <div class="consejo">
+              <picture><img src="#" alt="" />Icono</picture>
+              <h3>Aislar espacios:</h3>
+              <p>
+                Aislar espacios: Asegúrate de que las puertas y ventanas estén
+                cerradas cuando el aire acondicionado esté encendido para evitar
+                la pérdida de aire fresco.
+              </p>
+            </div>
+
+            <div class="consejo">
+              <picture><img src="#" alt="" />Icono</picture>
+              <h3>Mantenimiento profesional:</h3>
+              <p>
+                Programa revisiones y mantenimientos regulares con un técnico
+                especializado. Esto puede ayudar a identificar y resolver
+                problemas antes de que se conviertan en fallas mayores.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="promociones">
         <article class="cuerpos" id="cuerpo-seis">
-            <h2>Promociones y Ofertas Especiales: (6)</h2>
-            
-            <p>Mantente al tanto de nuestras promociones exclusivas y ofertas especiales. ¡Asegúrate de no perderte nuestras oportunidades para mejorar tu sistema de climatización a precios irresistibles!</p>
-        </article>    
-    </section>
+          <h2>Promociones y Ofertas Especiales: (6)</h2>
 
-    <section id="contacto">
-        <article class="cuerpos" id="cuerpo-siete">
-            <h2>Contacto: (7)</h2>
-                <div id="call"><p>¿Listo para mejorar tu comodidad climática? Contáctanos hoy para obtener más información sobre nuestros productos y servicios. Estamos aquí para responder a todas tus preguntas y ayudarte a encontrar la solución perfecta para tus necesidades de climatización.</p>
-                <p>[Información de Contacto: Número de Teléfono, Correo Electrónico, Ubicación, Formulario de Contacto]</p></div>
-            <button>contacto</button>
+          <p>
+            Mantente al tanto de nuestras promociones exclusivas y ofertas
+            especiales. ¡Asegúrate de no perderte nuestras oportunidades para
+            mejorar tu sistema de climatización a precios irresistibles!
+          </p>
         </article>
-    </section>
-</main>
-<footer id="footer">
-    <p>&copy; 2024 Servicetec - Instalación de Aires Acondicionados - Buenos Aires - Argentina</p>
-    <p hidden>Powered by www.ClaudioDev.com.ar</p>
-</footer>
+      </section>
 
-</body>
+      <section id="contacto">
+        <article class="cuerpos" id="cuerpo-siete">
+          <h2>Contacto: (7)</h2>
+          <div id="call">
+            <p>
+              ¿Listo para mejorar tu comodidad climática? Contáctanos hoy para
+              obtener más información sobre nuestros productos y servicios.
+              Estamos aquí para responder a todas tus preguntas y ayudarte a
+              encontrar la solución perfecta para tus necesidades de
+              climatización.
+            </p>
+            <p>
+              [Información de Contacto: Número de Teléfono, Correo Electrónico,
+              Ubicación, Formulario de Contacto]
+            </p>
+          </div>
+          <button>contacto</button>
+        </article>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>
+        &copy; 2024 Servicetec - Instalación de Aires Acondicionados - Buenos
+        Aires - Argentina
+      </p>
+      <p hidden>Powered by www.ClaudioDev.com.ar</p>
+    </footer>
+  </body>
+  <script src="js/script.js" defer></script>
 </html>
