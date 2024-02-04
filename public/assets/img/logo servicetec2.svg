@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="675.18" height="621.07" viewBox="0 0 675.18 621.07">
+  <g id="b4077221-2a90-4159-9c7c-d3edfd81deef" data-name="Capa 2">
+    <rect x="6" y="191.35" width="663.18" height="253.24" rx="19.65" style="fill: none;stroke: #0a65b0;stroke-miterlimit: 10;stroke-width: 12px"/>
+    <path d="M176.85,488.15a26.32,26.32,0,0,1,26.32-26.32H494.29a26.32,26.32,0,0,1,26.32,26.32h0" transform="translate(-11.14 -43.57)" style="fill: none;stroke: #0a65b0;stroke-miterlimit: 10;stroke-width: 6px"/>
+    <path d="M79.15,476.79a41.28,41.28,0,0,1,41.28-41.28H577a41.28,41.28,0,0,1,41.28,41.28h0" transform="translate(-11.14 -43.57)" style="fill: none;stroke: #0a65b0;stroke-miterlimit: 10;stroke-width: 12px"/>
+    <path d="M58.09,467.65C60.86,435.51,72.5,419.44,96.88,415l498.71-.55c13.3,1.67,46,13,44.89,54.58,10.19.75,14.55-5.81,18.28-24.66V275.92c0-41-178.9,35.92-335.8,36.58-112.56,1.82-206.51-8.31-261-43.78-9.09-7.53-23.27-13.85-23.27,0V446C38.7,468.3,52.1,471.48,58.09,467.65Z" transform="translate(-11.14 -43.57)" style="fill: #9ecaef"/>
+    <circle cx="594.96" cy="270.59" r="28.37" style="fill: #0a65b0;stroke: #0a65b0;stroke-miterlimit: 10;stroke-width: 6px"/>
+  </g>
+  <g id="e492abd8-cf8b-4fee-ba11-0072dd291b0c" data-name="Capa 4">
+    <g>
+      <line x1="595.27" y1="245.85" x2="595.27" y2="295.32" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="616.69" y1="258.22" x2="573.85" y2="282.95" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="573.85" y1="258.22" x2="616.69" y2="282.95" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="586.92 250.46 595.26 256.4 603.37 250.46" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="574.24 267.85 583.46 263.4 582.15 253.43" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="581.58 287.74 582.33 277.53 573.05 273.68" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="586.92 290.71 595.26 284.77 603.37 290.71" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="616.68 273.3 607.72 278.24 609.56 288.12" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <polyline points="608.15 253.67 607.53 263.89 616.87 267.61" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <path d="M84.39,515.44H332.92V647.19c0,12.26-6.86,17.45-18.71,17.45-37.32-1.47-71.44-12.57-103.06-31.17h63.17c20.48-.58,34.09-7.51,34.07-27L308,590H287.13l.07,11.43c0,7.76-4.62,10.3-13.3,10l-97,.83a223.84,223.84,0,0,1-38-30.34H259.77c16.21.16,29.4-9.25,29.51-22V544.54l-19.41,0c0,11.66-1.06,16-10.1,16.23l-142.11-.26C104.09,544.81,92.51,529.67,84.39,515.44Z" transform="translate(-11.14 -43.57)" style="fill: #4994d2"/>
+    <path d="M614.51,515.44H366V647.19c0,12.26,6.85,17.45,18.7,17.45,37.32-1.47,71.44-12.57,103.06-31.17H424.58c-20.48-.58-34.09-7.51-34.07-27l.41-16.42h20.85l-.07,11.43c0,7.76,4.62,10.3,13.3,10l97,.83a223.84,223.84,0,0,0,38-30.34H439.13c-16.21.16-29.4-9.25-29.51-22V544.54l19.41,0c0,11.66,1.06,16,10.1,16.23l142.11-.26C594.81,544.81,606.4,529.67,614.51,515.44Z" transform="translate(-11.14 -43.57)" style="fill: #4994d2"/>
+    <path d="M77,207.63C186.73-11.11,521.25-11.11,628,207.63" transform="translate(-11.14 -43.57)" style="fill: #4994d2"/>
+    <g>
+      <line x1="342.14" y1="21.78" x2="342.14" y2="149.79" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <line x1="397.57" y1="53.78" x2="286.71" y2="117.79" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <line x1="286.71" y1="53.78" x2="397.57" y2="117.79" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <polyline points="320.56 33.71 342.14 49.09 363.11 33.71" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <polyline points="287.73 78.69 311.59 67.18 308.21 41.4" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <polyline points="306.72 130.17 308.67 103.75 284.64 93.8" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <polyline points="320.56 137.86 342.14 122.48 363.11 137.86" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <polyline points="397.57 92.81 374.36 105.6 379.13 131.16" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+      <polyline points="375.49 42 373.89 68.45 398.04 78.09" style="fill: none;stroke: #9ecaef;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+    </g>
+  </g>
+</svg>
