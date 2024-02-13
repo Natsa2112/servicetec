@@ -25,7 +25,7 @@
   /* Tamaños de fuentes */
   --titulo_h1: clamp(1rem, 7vw, 2.6rem);
   --titulos_h2: clamp(1.2rem, 5.6vw, 2rem);
-  --subtitulo_seccion_principal: clamp(1.1rem, 4vw, 2rem);
+  --subtitulo_seccion_principal: clamp(1.1rem, 2vw, 1.5rem);
   --parrafo_seccion_principal: clamp(0.6rem, 2.3vw, 1.1rem);
   --parrafo_secciones: clamp(1.2rem, 2.5vw, 1.4rem);
 }
@@ -37,22 +37,11 @@
 }
 
 body {
-  font-family: raleway, sans-serif;
-
+  min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
   display: grid;
-  grid-template-rows: auto; /* Definir filas para header, main y footer */
-  min-height: auto; /*Asegurar que el body ocupe al menos la altura de la ventana */
 }
 
-#logo {
-  width: auto;
-  height: auto;
-  max-width: 50px;
-  max-height: 50px;
-  margin-right: 10px;
-}
-
-/**header seccion**/
 .header {
   position: fixed;
   top: 0;
@@ -66,39 +55,35 @@ body {
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, .1);
   backdrop-filter: blur(50px);
   z-index: -1;
 }
 
 .header::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transition: 0.5s;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
 }
 
-.header:hover::after {
+.header:hover::after{
   left: 100%;
+
 }
 
-.logo {  
-  font-size: 2.5rem;
+.logo {
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -125,781 +110,164 @@ body {
   display: none;
 }
 
-
-/**primer seccion**/
+/*seccion inicio*/
 main {
-  background-color: red;
-  min-height: 800px;
-  grid-row: 2;
+  display: grid;
 }
 
 
-
-/*---------------------------------------------*/
-/* Responsive breakpoint*/
-/*estado pc*/
-@media (min-width: 993px) {
-  #cuerpo-uno {
-    /*display: none;  ocultar el cuerpo-uno */
-    position: relative;
-    min-height: 650px;
-    background-image: url(../img/2-pc-1024/dormitorio-001.webp);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    background-blend-mode: multiply;
-    
-  }
-
-  #empresa {
-    /*background-color: darkgreen;*/
-    padding-top: 40px;
-    font-size: 5rem;
-    color: var(--color_blanco) ;
-    text-shadow: #000 0.1em 0.1em 0.2em;
-    padding-top: 15%;
-    margin-left: 4%;
-    animation: animacionEmpresa 1s ease-out;
-  }
-  @keyframes animacionEmpresa {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  #eslogan {
-    color: var(--color_blanco);
-    text-shadow: #000 0.1em 0.1em 0.2em;
-    padding-top: 4%;
-    margin-left: 8%;
-    animation: animacionEslogan 2s ease-out;
-  }
-  @keyframes animacionEslogan {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  #parrafo-bienvenida {
-    font-weight: bold;
-    color: var(--color_blanco);
-    text-shadow: #000 0.1em 0.1em 0.2em;
-    font-size: 1rem;
-    padding-top: 10%;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    animation: aparecerDesdeAbajo 4s ease-out;
-  }
-  @keyframes aparecerDesdeAbajo {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-
-/**segunda seccion**/
-  #cuerpo-dos {
-    background-color: var(--color_light_1);
-    min-height: 615px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card-s {
-    margin-bottom: 4%;
-  }
+/*hero seccion*/
+.inicio {
+  height: 600px;
+  background-image: url("../img/2-pc-1024/dormitorio-001.webp");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
   
-  #card-service {
-    height: 450px;
-    padding: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 20%;
-    max-height: max-content;
-  }
-  #titulo-sevicios {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 10%;
-    text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-  }
+  background-color: #4994d2;
+}
 
-  #foto-servicios {
-    width: 100%;
-    padding-right: 20%;
-
-  }
-  .card-s p{
-    max-width: 100%;
-    margin-top: 2%;
-    font-size: 1rem;
-    text-align: justify;
-  }
+.inicio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .1);
   
-  .card-s h3 {
-    text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-  }
-  #img-cocinab {
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  }
-
-  /**tercera seccion**/
-#cuerpo-tres {
-  background-color: var(--color_blanco);
-  min-height: 615px;
-  display: grid;
-  grid-template-rows: 25% 1fr;
-  padding-top: 2.5%;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
-#productos-titulo {
-  background-color: var(--color_blanco);
-}
-#productos-titulo h2 {
-  margin-top: 4%;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-  font-size: 2.5rem;
-	text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-}
-#productos-titulo p {
-  margin-top: 1%;
-  margin-left: 4%;
-  margin-right: 4%;
-  font-size: 1.3rem;
-  text-align: center;
-}
-#productos-cards {
-  padding: 2% 4% 2% 4%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.producto-card {
-  text-align: center;
-  background-color: var(--color_light_1);
-  margin: 4%;
-  border-radius: 2rem;
-  display: grid;
-  grid-template-rows: 44% 15% 40%;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-#productoA {
-	background-image: url(../img/2-pc-1024/dormitorio-002.webp);
-	background-size: cover;
-	background-position: top;
-	border-radius: 2rem 2rem 0 0;
-}
-#productoB {
-	background-image: url(../img/2-pc-1024/sala-001.webp);
-	background-size: cover;
-	background-position: top;
-	border-radius: 2rem 2rem 0 0;
-}
-#productoC {
-	background-image: url(../img/2-pc-1024/mujer.webp);
-	background-size: cover;
-	background-position: center;
-	border-radius: 2rem 2rem 0 0;
+.inicio h1 {
+  font-size: 7rem;
+  color: #fff;
+  text-align: left;
+  padding-top: 200px;
+  padding-left: 6%;
+  text-shadow: 0 0 10px #00000070;
+
 }
 
-.producto-card h3 {
-  margin-top: 5%;
-}
-.producto-card p {
-  margin-top: 2%;
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-	padding-bottom: 5%;
-}
-
-/**cuarta seccion**/
-#cuerpo-cuatro {
-	display: none; /*Esconde la sección cuarta*/
-	background-color: var(--color_dark_2);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-#cuerpo-cuatro h2 {
-  background-color: lightgrey;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
+.inicio h2 {
   font-size: 3rem;
-  padding-top: 4%;
+  color: #fff;
+  text-align: left;
+  padding-left: 6%;
+  text-shadow: 0 0 10px #00000070;
 }
-#testimonios-parrafos {
-  background-color: #9dcaef;
-  margin: 4%;
+
+/*cuerpos*/
+.cuerpos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-#testimonios-parrafos div {
-  background-color: chocolate;
-  margin: 3%;
+/*seccion servicios*/
+.servicios {
   display: grid;
-  grid-template-rows: 50% 1fr;
-}
-.testimonios picture {
-  background-color: lightslategray;
-  align-self: center;
-  justify-self: center;
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
-}
-
-#testimonios-parrafos p {
-  background-color: darkolivegreen;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-}
-
-/**quinta seccion**/
-#cuerpo-cinco {
-	display: none;
-  background-color: var(--color_blanco);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-#cuerpo-cinco h2 {
-  font-size: 3rem;
-  background-color: lightpink;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-  padding-top: 4%;
-}
-#consejos-grupo {
-  background-color: aqua;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 4%;
-}
-.consejo {
-  background-color: darkgoldenrod;
-  margin-left: 4%;
-  margin-right: 4%;
-  display: grid;
-  grid-template-rows: 35% 10% 1fr;
-}
-
-.consejo picture {
-  background-color: lightblue;
-  align-self: center;
-  justify-self: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.consejo h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 2%;
-}
-.consejo p {
-  text-align: justify;
-  padding: 6%;
-}
-
-/**sexta seccion**/
-#cuerpo-seis {
-	display: none;
-  background-color: var(--color_dark_2);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-#cuerpo-seis h2 {
-  background-color: beige;
-  margin: 4%;
-  padding: 4%;
-  text-align: center;
-  font-size: 2.5rem;
-  place-items: center;
-}
-#cuerpo-seis p {
-  background-color: pink;
-  margin: 4%;
-  padding: 2%;
-  text-align: center;
-  font-size: 2rem;
-}
-
-
-/**Septima seccion**/
-#cuerpo-siete {
-  background-color: var(--color_blanco);
-  min-height: 615px;
-  display: grid;
-  padding-left: 5%;
-  padding-right: 5%;
+  max-width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
   background-color: var(--color_light_2);
 }
-#cuerpo-siete h2 {
-  margin: 4%;
-  padding: 4%;
-  text-align: center;
-  font-size: 2.5rem;
-  place-items: center;
+.servicios h2 {
+  font-size: var(--titulos_h2);
 }
-#call {
-  margin: 1% 4% 4% 4%;
-  padding: 1%;
-  text-align: center;
-  font-size: 2rem;
+
+.servicios h3 {
+  padding-top: 3%;
+  font-size: var(--subtitulo_seccion_principal);
 }
+
+.servicios p {
+  padding-top: 2%;
+  font-size: var(--parrafo_seccion_principal);
+}
+
+.servicios-article {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.card-service {
+  display: grid;
+  max-width: 90%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+}
+
+.foto-servicios {
+  display: grid;
+  max-width: 100%;
+}
+
+.foto-servicios img {
+  max-width: 90%;
+  border-radius: 5%;
+}
+
+/*Productos Destacados*/
+.productos {
+  display: grid;
+  background-color: salmon;
+  max-width: 100%;
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+  
+}
+
+.productos-presentacion {
+  display: grid;
+  max-width: 100%;
+
+
+}
+
+.productos-presentacion h2 {
+  font-size: var(--titulos_h2);
+  padding-top: 5%;
+  height: 75%;
+  padding-bottom: 0%;
+  text-align: center;
+  background-color: green;
+}
+
+.productos-presentacion p {
+  font-size: var(--parrafo_seccion_principal);
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  max-height: 100px;
+  background-color: greenyellow;
 }
 
 
-/*------------------------------------------------------*/
+
+
+
+  
+/* Responsive breakpoint*/
+
+/*pc*/
 @media (max-width: 992px) {
-  .header {
+  .header{
     padding: 1.3rem 5%;
   }
-
-  #cuerpo-uno {
-    position: relative;
-    min-height: 650px;
-    background-image: url(../img/2-pc-1024/dormitorio-002.webp);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    background-blend-mode: multiply;
-  }
 }
-
-  @media (min-width: 993px) {
-    #cuerpo-uno {
-      /*display: none;  ocultar el cuerpo-uno */
-      position: relative;
-      min-height: 650px;
-      background-image: url(../img/2-pc-1024/dormitorio-001.webp);
-      background-size: cover;
-      background-position: top;
-      background-repeat: no-repeat;
-      justify-content: center;
-      align-items: center;
-      background-blend-mode: multiply;
-      
-    }
-  
-    #empresa {
-      /*background-color: darkgreen;*/
-      padding-top: 40px;
-      font-size: 5rem;
-      color: var(--color_blanco) ;
-      text-shadow: #000 0.1em 0.1em 0.2em;
-      padding-top: 15%;
-      margin-left: 4%;
-      animation: animacionEmpresa 1s ease-out;
-    }
-    @keyframes animacionEmpresa {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-  
-    #eslogan {
-      color: var(--color_blanco);
-      text-shadow: #000 0.1em 0.1em 0.2em;
-      padding-top: 4%;
-      margin-left: 8%;
-      animation: animacionEslogan 2s ease-out;
-    }
-
-    @keyframes animacionEslogan {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-  
-    #parrafo-bienvenida {
-      font-weight: bold;
-      color: var(--color_blanco);
-      text-shadow: #000 0.1em 0.1em 0.2em;
-      font-size: 1rem;
-      padding-top: 10%;
-      text-align: center;
-      margin-left: 20%;
-      margin-right: 20%;
-      animation: aparecerDesdeAbajo 4s ease-out;
-    }
-    @keyframes aparecerDesdeAbajo {
-      from {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  
-  
-  /**segunda seccion**/
-    #cuerpo-dos {
-      background-color: var(--color_light_1);
-      min-height: 615px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .card-s {
-      margin-bottom: 4%;
-    }
-    
-    #card-service {
-      height: 450px;
-      padding: 5%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      padding-left: 20%;
-      max-height: max-content;
-    }
-
-    #titulo-sevicios {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 10%;
-      text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-    }
-  
-    #foto-servicios {
-      width: 100%;
-      padding-right: 20%;
-  
-    }
-    .card-s p{
-      max-width: 100%;
-      margin-top: 2%;
-      font-size: 1rem;
-      text-align: justify;
-    }
-    
-    .card-s h3 {
-      text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-    }
-
-    #img-cocinab {
-      width: 100%;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    }
-  
-    /**tercera seccion**/
-  #cuerpo-tres {
-    background-color: var(--color_blanco);
-    min-height: 615px;
-    display: grid;
-    grid-template-rows: 25% 1fr;
-    padding-top: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
-  #productos-titulo {
-    background-color: var(--color_blanco);
-  }
-
-  #productos-titulo h2 {
-    margin-top: 4%;
-    margin-left: 4%;
-    margin-right: 4%;
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-  }
-
-  #productos-titulo p {
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 1.3rem;
-    text-align: center;
-  }
-
-  #productos-cards {
-    padding: 2% 4% 2% 4%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .producto-card {
-    text-align: center;
-    background-color: var(--color_light_1);
-    margin: 4%;
-    border-radius: 2rem;
-    display: grid;
-    grid-template-rows: 44% 15% 40%;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  }
-
-  #productoA {
-    background-image: url(../img/2-pc-1024/dormitorio-002.webp);
-    background-size: cover;
-    background-position: top;
-    border-radius: 2rem 2rem 0 0;
-  }
-
-  #productoB {
-    background-image: url(../img/2-pc-1024/sala-001.webp);
-    background-size: cover;
-    background-position: top;
-    border-radius: 2rem 2rem 0 0;
-  }
-
-  #productoC {
-    background-image: url(../img/2-pc-1024/mujer.webp);
-    background-size: cover;
-    background-position: center;
-    border-radius: 2rem 2rem 0 0;
-  }
-  
-  .producto-card h3 {
-    margin-top: 5%;
-  }
-
-  .producto-card p {
-    margin-top: 2%;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-  }
-
-  /**cuarta seccion**/
-#cuerpo-cuatro {
-	display: none; /*Esconde la sección cuarta*/
-	background-color: var(--color_dark_2);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-
-#cuerpo-cuatro h2 {
-  background-color: lightgrey;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 4%;
-}
-
-#testimonios-parrafos {
-  background-color: #9dcaef;
-  margin: 4%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#testimonios-parrafos div {
-  background-color: chocolate;
-  margin: 3%;
-  display: grid;
-  grid-template-rows: 50% 1fr;
-}
-.testimonios picture {
-  background-color: lightslategray;
-  align-self: center;
-  justify-self: center;
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
-}
-
-#testimonios-parrafos p {
-  background-color: darkolivegreen;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-}
-
-/**quinta seccion**/
-#cuerpo-cinco {
-	display: none;
-  background-color: var(--color_blanco);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-
-#cuerpo-cinco h2 {
-  font-size: 3rem;
-  background-color: lightpink;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-  padding-top: 4%;
-}
-
-#consejos-grupo {
-  background-color: aqua;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 4%;
-}
-
-.consejo {
-  background-color: darkgoldenrod;
-  margin-left: 4%;
-  margin-right: 4%;
-  display: grid;
-  grid-template-rows: 35% 10% 1fr;
-}
-
-.consejo picture {
-  background-color: lightblue;
-  align-self: center;
-  justify-self: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.consejo h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 2%;
-}
-
-.consejo p {
-  text-align: justify;
-  padding: 6%;
-}
-
-/*------------------------------------------------------*/
-/**sexta seccion**/
-#cuerpo-seis {
-	display: none;
-  background-color: var(--color_dark_2);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-
-#cuerpo-seis h2 {
-  background-color: beige;
-  margin: 4%;
-  padding: 4%;
-  text-align: center;
-  font-size: 2.5rem;
-  place-items: center;
-}
-
-#cuerpo-seis p {
-  background-color: pink;
-  margin: 4%;
-  padding: 2%;
-  text-align: center;
-  font-size: 2rem;
-}
-  
-/*------------------------------------------------------*/
-  /**Septima seccion**/
-  #cuerpo-siete {
-    background-color: var(--color_blanco);
-    min-height: 615px;
-    display: grid;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: var(--color_light_2);
-  }
-
-  #cuerpo-siete h2 {
-    margin: 4%;
-    padding: 4%;
-    text-align: center;
-    font-size: 2.5rem;
-    place-items: center;
-  }
-
-  #call {
-    margin: 1% 4% 4% 4%;
-    padding: 1%;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-}
-
-
-/*----------------------------------------------------*/
-@media only screen and (max-width: 768px) {
-  .icons {
+/*Tablet / Celulares*/
+@media (max-width: 768px) {
+  .icons{
     display: inline-flex;
-  }
-  #nombre-empresa {
-    display: none;
-  }
-
-  #cuerpo-uno {
-    position: relative;
-    min-height: 960px;
-    background-image: url(../img/4-movil-767/cocina-001.png);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    background-blend-mode: multiply;
-    
-  }
-
-  #empresa {
-    display: flex;
-    text-align: center;
-    padding: 0;
-    margin: 0;
   }
 
   #check:checked ~ .icons #menu-icon {
@@ -920,11 +288,11 @@ main {
     left: 0;
     width: 100%;
     height: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
-    transition: 0.3s ease;
+    transition: .3s ease;
   }
 
   #check:checked ~ .navbar {
@@ -938,7 +306,7 @@ main {
     text-align: center;
     transform: translateY(-50px);
     opacity: 0;
-    transition: 0.3s ease;
+    transition: .3s ease;
   }
 
   #check:checked ~ .navbar a {
@@ -946,319 +314,4 @@ main {
     opacity: 1;
     transition-delay: calc(0.15s * var(--i));
   }
-
-  @media (min-width: 993px) {
-    #cuerpo-uno {
-      /*display: none;  ocultar el cuerpo-uno */
-      position: relative;
-      min-height: 650px;
-      background-image: url(../img/2-pc-1024/dormitorio-001.webp);
-      background-size: cover;
-      background-position: top;
-      background-repeat: no-repeat;
-      justify-content: center;
-      align-items: center;
-      background-blend-mode: multiply;
-      
-    }
-  
-    #empresa {
-      /*background-color: darkgreen;*/
-      padding-top: 40px;
-      font-size: 5rem;
-      color: var(--color_blanco) ;
-      text-shadow: #000 0.1em 0.1em 0.2em;
-      padding-top: 15%;
-      margin-left: 4%;
-      animation: animacionEmpresa 1s ease-out;
-    }
-    @keyframes animacionEmpresa {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-  
-    #eslogan {
-      color: var(--color_blanco);
-      text-shadow: #000 0.1em 0.1em 0.2em;
-      padding-top: 4%;
-      margin-left: 8%;
-      animation: animacionEslogan 2s ease-out;
-    }
-    @keyframes animacionEslogan {
-      from {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-  
-    #parrafo-bienvenida {
-      font-weight: bold;
-      color: var(--color_blanco);
-      text-shadow: #000 0.1em 0.1em 0.2em;
-      font-size: 1rem;
-      padding-top: 10%;
-      text-align: center;
-      margin-left: 20%;
-      margin-right: 20%;
-      animation: aparecerDesdeAbajo 4s ease-out;
-    }
-    @keyframes aparecerDesdeAbajo {
-      from {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  
-  
-  /**segunda seccion**/
-    #cuerpo-dos {
-      background-color: var(--color_light_1);
-      min-height: 615px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .card-s {
-      margin-bottom: 4%;
-    }
-    
-    #card-service {
-      height: 450px;
-      padding: 5%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      padding-left: 20%;
-      max-height: max-content;
-    }
-    #titulo-sevicios {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 10%;
-      text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-    }
-  
-    #foto-servicios {
-      width: 100%;
-      padding-right: 20%;
-  
-    }
-    .card-s p{
-      max-width: 100%;
-      margin-top: 2%;
-      font-size: 1rem;
-      text-align: justify;
-    }
-    
-    .card-s h3 {
-      text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-    }
-
-    #img-cocinab {
-      width: 100%;
-      border-radius: 1rem;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    }
-  
-    /**tercera seccion**/
-  #cuerpo-tres {
-    background-color: var(--color_blanco);
-    min-height: 615px;
-    display: grid;
-    grid-template-rows: 25% 1fr;
-    padding-top: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
-  #productos-titulo {
-    background-color: var(--color_blanco);
-  }
-  #productos-titulo h2 {
-    margin-top: 4%;
-    margin-left: 4%;
-    margin-right: 4%;
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: #7c7a7a 0.1em 0.1em 0.2em;
-  }
-  #productos-titulo p {
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  #productos-cards {
-    padding: 2% 4% 2% 4%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .producto-card {
-    text-align: center;
-    background-color: var(--color_light_1);
-    margin: 4%;
-    border-radius: 2rem;
-    display: grid;
-    grid-template-rows: 44% 15% 40%;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  }
-  #productoA {
-    background-image: url(../img/2-pc-1024/dormitorio-002.webp);
-    background-size: cover;
-    background-position: top;
-    border-radius: 2rem 2rem 0 0;
-  }
-  #productoB {
-    background-image: url(../img/2-pc-1024/sala-001.webp);
-    background-size: cover;
-    background-position: top;
-    border-radius: 2rem 2rem 0 0;
-  }
-  #productoC {
-    background-image: url(../img/2-pc-1024/mujer.webp);
-    background-size: cover;
-    background-position: center;
-    border-radius: 2rem 2rem 0 0;
-  }
-  
-  .producto-card h3 {
-    margin-top: 5%;
-  }
-  .producto-card p {
-    margin-top: 2%;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-  }
-
-  /**cuarta seccion**/
-#cuerpo-cuatro {
-	display: none; /*Esconde la sección cuarta*/
-	background-color: var(--color_dark_2);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-#cuerpo-cuatro h2 {
-  background-color: lightgrey;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 4%;
-}
-#testimonios-parrafos {
-  background-color: #9dcaef;
-  margin: 4%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#testimonios-parrafos div {
-  background-color: chocolate;
-  margin: 3%;
-  display: grid;
-  grid-template-rows: 50% 1fr;
-}
-.testimonios picture {
-  background-color: lightslategray;
-  align-self: center;
-  justify-self: center;
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
-}
-
-#testimonios-parrafos p {
-  background-color: darkolivegreen;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-}
-
-/**quinta seccion**/
-#cuerpo-cinco {
-	display: none;
-  background-color: var(--color_blanco);
-  min-height: 615px;
-  /*display: grid;*/
-  grid-template-rows: 25% 1fr;
-}
-#cuerpo-cinco h2 {
-  font-size: 3rem;
-  background-color: lightpink;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-align: center;
-  padding-top: 4%;
-}
-#consejos-grupo {
-  background-color: aqua;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 4%;
-}
-.consejo {
-  background-color: darkgoldenrod;
-  margin-left: 4%;
-  margin-right: 4%;
-  display: grid;
-  grid-template-rows: 35% 10% 1fr;
-}
-
-.consejo picture {
-  background-color: lightblue;
-  align-self: center;
-  justify-self: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.consejo h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 2%;
-}
-.consejo p {
-  text-align: justify;
-  padding: 6%;
-}
-  }
-}
-
-
-
-
-/*----------------------------------------------------------*/
-
-
-
-
-
-/**footer seccion**/
-footer {
-  background-color: lightpink;
-  min-height: 30px;
-  grid-row: 3;
-  place-items: center;
 }
